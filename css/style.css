@@ -328,8 +328,9 @@ body{ min-height:100%; background:#fff; float:left; width:100%; font-size:.8125e
 */
 
 
-.social {}
-.social img {margin-right: 20px;}
+.social { font-family:"PodkovaRegular", Times, serif; color:#161616; font-size:2em; line-height:1.2;  }
+.social a:last-child { margin-right: 0;} 
+.social a {margin-right: 20px; }
 
 #templateBody {
   padding: 5px;
