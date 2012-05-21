@@ -1,2 +1,4 @@
-c3s.github.com
-==============
+c3s-site
+========
+
+info-site for the culture commons collecting society
