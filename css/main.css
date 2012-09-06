@@ -1,0 +1,63 @@
+.modal{
+    width: 670px;
+    margin: -310px 0 0 -335px;
+}
+.modal h3{
+    display: inline-block;
+}
+.modal img{
+    display: inline-block;
+    height: 40%;
+    width: 42%;
+    margin-top: -32px;
+    margin-left: 40px;
+}
+
+.modal-body{
+    max-height: 490px;
+    padding: 24px;
+}
+.form-horizontal .controls{
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.modal form .control-group{
+    margin-bottom: 30px;
+}
+.modal>.modal-body>form> .control-group{
+    margin-top: 30px;
+}
+#mycontacts{
+    margin-bottom: 12px;
+}
+.control-group>label{
+    margin-bottom: 10px;
+}
+
+.controls>label{
+    margin: 3px 0 3px 0;
+}
+.modal>.modal-body>form>.contactinfos{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.modal-body>form>.contactinfos .controls{
+    display: block;
+    margin-left: 180px;
+}
+
+.modal-body>form>.contactinfos>label{
+    margin-bottom: 5px;
+}
+
+legend{
+    line-height: 26px;
+    font-size: 16px;
+    color: #A60000;
+    font-family: "PodkovaRegular",Times,serif;
+}
+
+#pid{
+    margin-top: 22px;
+}

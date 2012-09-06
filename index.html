@@ -1,698 +1,969 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>C3S - Caring for free culture</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>C3S - Caring for free culture</title>
 
-<!-- http://t.co/dKP3o1e --> 
-<meta name="HandheldFriendly" content="True"> 
-<meta name="MobileOptimized" content="320"> 
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-<link href="css/style.css" type="text/css" rel="stylesheet">
-<link href="css/nivo-slider.css" type="text/css" rel="stylesheet">
-<link href="css/prettyPhoto.css" type="text/css" rel="stylesheet">
-<link href="css/tipsy.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="js/libs/jquery-1.4.3.min.js"></script>
-<script type="text/javascript" src="js/libs/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript" src="js/libs/modernizr-1.7.min.js"></script>
-<script type="text/javascript" src="js/libs/css3-mediaqueries.js"></script>
-<script type="text/javascript" src="js/libs/jquery.easing.1.2.js"></script>
-<script type="text/javascript" src="js/libs/jquery.visualNav.min.js"></script>
-<script type="text/javascript" src="js/libs/jquery.quicksand.js"></script>
-<script type="text/javascript" src="js/libs/jquery.tipsy.js"></script>
-<script type="text/javascript" src="js/libs/jquery.livetwitter.min.js"></script>
-<!-- fancybox -->
-<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet">
 
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/nivo-slider.css" type="text/css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet">
+    <link href="css/tipsy.css" type="text/css" rel="stylesheet">
 
-<script type="text/javascript">
-function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
-    
-    var imgs=["banners/changes_violet_w500.jpg",
-              "banners/groovy_red_w500.jpg",
-              "banners/myway_lightgreen_w500.jpg",
-              "banners/indiesdelight_blue_w500.jpg",
-              "banners/mygeneration_moos_w500.jpg",
-              "banners/itsyours_candy_w500.jpg"];
-    
-    var d=document;
-    theValue=imgs[theValue];
-    if (!theValue || !d.getElementById ) return;
-    var obj = d.getElementById(objId);
-    if (obj) obj.src=theValue;    
-}
-</script>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
 
+    <script type="text/javascript" src="js/libs/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="js/libs/modernizr-1.7.min.js"></script>
+    <script type="text/javascript" src="js/libs/css3-mediaqueries.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.easing.1.2.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.visualNav.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.livetwitter.min.js"></script>
+    <!-- fancybox -->
+    <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
-<script type="text/javascript">
-/* <![CDATA[ */
-   (function() {
-       var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-       s.type = 'text/javascript';
-       s.async = true;
-       s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-       t.parentNode.insertBefore(s, t);
-   })();
-/* ]]> */</script>
+    <!--bootstrap-->
+    <script type="text/javascript" src="js/libs/jquery.min.1.8.1.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+
+    <script type="text/javascript">
+        function diva_imgBySel(objId, theValue) { //v0.1 divaHTML.com
+
+            var imgs = ["banners/changes_violet_w500.jpg",
+                "banners/groovy_red_w500.jpg",
+                "banners/myway_lightgreen_w500.jpg",
+                "banners/indiesdelight_blue_w500.jpg",
+                "banners/mygeneration_moos_w500.jpg",
+                "banners/itsyours_candy_w500.jpg"];
+
+            var d = document;
+            theValue = imgs[theValue];
+            if (!theValue || !d.getElementById) return;
+            var obj = d.getElementById(objId);
+            if (obj) obj.src = theValue;
+        }
+    </script>
 
 
-<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        (function () {
+            var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+            t.parentNode.insertBefore(s, t);
+        })();
+        /* ]]> */</script>
+
+
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen"/>
 </head>
 
 <body>
 <div id="page">
-  <header id="header">
+<header id="header">
     <div class="center">
 
-            <a href="/index_en.html" style="opacity:0.5;"><img src="images/en.png"></a>
+        <a href="/index_en.html" style="opacity:0.5;"><img src="images/en.png"></a>
 
-      <nav id="main-menu">
-        <ul >
-          <li><a href="#home">Start</a></li>
-          <li><a href="#roadmap">Roadmap</a></li>
-          <li><a href="#howitworks">Wie es funktioniert</a></li>
-          <li><a href="#about">Über uns</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-          <li><a href="#howitworks">Newsletter</a></li>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="#home">Start</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#howitworks">Wie es funktioniert</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#howitworks">Newsletter</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <ul id="filter" class="mobile-ipad-menu">
+            <li id="top"><a class="top-link">Home</a>
+                <ul id="controls">
+
+                    <li><a href="#home" class="visualNav">Start</a></li>
+                    <li><a href="#roadmap" class="visualNav">Roadmap</a></li>
+                    <li><a href="#howitworks" class="visualNav">Wie es funktioniert</a></li>
+                    <li><a href="#about" class="visualNav">Über uns</a></li>
+                    <li><a href="#team" class="visualNav">Team</a></li>
+                    <li><a href="#contact" class="visualNav">Kontakt</a></li>
+                    <li><a href="#howitworks" class="visualNav">Newsletter</a></li>
+                </ul>
+                <br>
+            </li>
         </ul>
-      </nav><br>
 
-      <ul id="filter" class="mobile-ipad-menu">
-        <li id="top"><a class="top-link">Home</a>
-          <ul id="controls">
+        <!-- /END nav -->
 
-            <li><a href="#home" class="visualNav">Start</a></li>
-            <li><a href="#roadmap" class="visualNav">Roadmap</a></li>
-            <li><a href="#howitworks" class="visualNav">Wie es funktioniert</a></li>
-            <li><a href="#about" class="visualNav">Über uns</a></li>
-            <li><a href="#team" class="visualNav">Team</a></li>
-            <li><a href="#contact" class="visualNav">Kontakt</a></li>
-            <li><a href="#howitworks" class="visualNav">Newsletter</a></li>
-          </ul><br>
-        </li>
-      </ul>
-      
-      <!-- /END nav -->
 
-      
-      <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.c-3-s.eu"></a>
-      <noscript>
-        <a href="http://flattr.com/thing/724265/C3S-Caring-for-free-culture" target="_blank">
-          <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" />
-        </a>
-      </noscript>
+        <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.c-3-s.eu"></a>
+        <noscript>
+            <a href="http://flattr.com/thing/724265/C3S-Caring-for-free-culture" target="_blank">
+                <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this"
+                     border="0"/>
+            </a>
+        </noscript>
 
-      <div class="clear"></div>
+        <div class="clear"></div>
     </div>
-  </header>
-  <!-- /END header-->
+</header>
+<!-- /END header-->
 
 
-  <section id="home" class="content first_content">
+<section id="home" class="content first_content">
     <br><br>
-  
+
     <div class="center">
-      <hgroup id="mainhead">
-        <div class="align-center"><a href="http://c-3-s.eu" title="C3S - Cultural Commons Collecting Society"><img src="images/logo_horiz_w700.png"></a></div>
-        <h2 class="align-center" id="head-tagline">C3S. Caring for free culture.</h2>
-      </hgroup>
-      
-      <p class="align-center">Die C3S ist eine gemeinschaftliche Initiative mit Künstlern und für Künstler, eine neue und richtungsweisende europäische Verwertungsgesellschaft zu gründen. Eine nicht-exklusive Verwertungsgesellschaft, die es Musikern ermöglicht, ihre unter nicht-kommerziellen Creative-Commons-Lizenzen veröffentlichten Werke außerhalb traditioneller Schemata kommerziell verwerten zu lassen. Mehr als das, die C3S wird auch offen sein für die kommerzielle Verwertung von Werken unter anderen freien Lizenzen einschließlich der Werke, die ohne explizit definierte Lizenz veröffentlicht werden.</p>
+        <hgroup id="mainhead">
+            <div class="align-center"><a href="http://c-3-s.eu" title="C3S - Cultural Commons Collecting Society"><img
+                    src="images/logo_horiz_w700.png"></a></div>
+            <h2 class="align-center" id="head-tagline">C3S. Caring for free culture.</h2>
+        </hgroup>
 
-      <a name="barcamp"></a><br /><br /><br />
-      <h3 class="align-center">+++ News +++</h3>
-       <p id="intro">Absichtserklärung zum geplanten Beitritt zur C3S</p>
-       <p class="align-center">Ihr möchtet Euer Interesse an der C3S als alternativer Verwertungsgesellschaft zeigen? Jetzt könnt Ihr offiziell Eure Absicht erklären, der C3S bei Ihrer Gründung beitreten zu wollen. Selbst wenn Ihr derzeit Mitglied einer anderen Verwertungsgesellschaft seid, könnt Ihr unterzeichnen. Wenn die C3S den Antrag auf Zulassung als Verwertungsgesellschaft stellt, müssen wir Euer Interesse daran belegen können.</p>
-       <p class="align-center"><strong>Seid eine/r der Ersten - <a href="http://c3s.cc/legal/absichtserklaerung.pdf">hier gehts zum PDF!</a></strong></p>
-       <p class="align-center">* * *</p>
-       <p id="intro">C3S Barcamp #1</p>
-       <p class="align-center">Vielen, vielen Dank an all diejenigen, die das <a href="https://wiki.openmusiccontest.org/BarcampSept12/">C3S Barcamp #1</a> am 2. September 2012 unterstützt, finanziert und besucht haben! Es war (um es vorsichtig auszudrücken) überwältigend, Eure Motivation zu erleben und Euer positives Feedback zu erhalten. Eure Bereitschaft, uns so umfassend zu unterstützen, ist grandios und mehr als wir erwartet haben. </p>
-       <p class="align-center"><strong>Ein großes Danke vom gesamten Team! Wir freuen uns auf das nächste Event mit Euch - und Euren Freunden!</strong></p>
-       <br>
+        <p class="align-center">Die C3S ist eine gemeinschaftliche Initiative mit Künstlern und für Künstler, eine neue
+            und richtungsweisende europäische Verwertungsgesellschaft zu gründen. Eine nicht-exklusive
+            Verwertungsgesellschaft, die es Musikern ermöglicht, ihre unter nicht-kommerziellen
+            Creative-Commons-Lizenzen veröffentlichten Werke außerhalb traditioneller Schemata kommerziell verwerten zu
+            lassen. Mehr als das, die C3S wird auch offen sein für die kommerzielle Verwertung von Werken unter anderen
+            freien Lizenzen einschließlich der Werke, die ohne explizit definierte Lizenz veröffentlicht werden.</p>
 
-      <p class="social align-center">
-        <a href="https://twitter.com/C3S"><img src="images/b_icon_twitter.png"></a>
-        <a href="http://c3s.tumblr.com"><img src="images/b_icon_tumblr.png"></a>
-        <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="images/b_icon_facebook.png"></a>
-        <a href="https://plus.google.com/u/0/b/104744056212264166492/"><img src="images/b_icon_googleplus.png"></a>
-      </p>
-      
+        <a name="barcamp"></a><br/><br/><br/>
 
-      <div class="clear"></div>
+        <h3 class="align-center">+++ News +++</h3>
 
-      <div id="stage">
-        <img src="images/slider1.jpg" alt="" />
-      </div>
-    </section>
-    
+        <p id="intro">Absichtserklärung zum geplanten Beitritt zur C3S</p>
+
+        <p class="align-center">Ihr möchtet Euer Interesse an der C3S als alternativer Verwertungsgesellschaft zeigen?
+            Jetzt könnt Ihr offiziell Eure Absicht erklären, der C3S bei Ihrer Gründung beitreten zu wollen. Selbst wenn
+            Ihr derzeit Mitglied einer anderen Verwertungsgesellschaft seid, könnt Ihr unterzeichnen. Wenn die C3S den
+            Antrag auf Zulassung als Verwertungsgesellschaft stellt, müssen wir Euer Interesse daran belegen können.</p>
+
+        <p class="align-center"><strong>Seid eine/r der Ersten</strong></br><button class="btn btn-large btn-inverse" id="openform">Absicht bekunden!</button></p>
+
+        <p class="align-center">
+            <strong><a href="http://c3s.cc/legal/absichtserklaerung.pdf">...und hier gehts zum PDF!</a></strong>
+        </p>
+
+        <p class="align-center">* * *</p>
+
+        <p id="intro">C3S Barcamp #1</p>
+
+        <p class="align-center">Vielen, vielen Dank an all diejenigen, die das <a
+                href="https://wiki.openmusiccontest.org/BarcampSept12/">C3S Barcamp #1</a> am 2. September 2012
+            unterstützt, finanziert und besucht haben! Es war (um es vorsichtig auszudrücken) überwältigend, Eure
+            Motivation zu erleben und Euer positives Feedback zu erhalten. Eure Bereitschaft, uns so umfassend zu
+            unterstützen, ist grandios und mehr als wir erwartet haben. </p>
+
+        <p class="align-center"><strong>Ein großes Danke vom gesamten Team! Wir freuen uns auf das nächste Event mit
+            Euch - und Euren Freunden!</strong></p>
+        <br>
+
+        <p class="social align-center">
+            <a href="https://twitter.com/C3S"><img src="images/b_icon_twitter.png"></a>
+            <a href="http://c3s.tumblr.com"><img src="images/b_icon_tumblr.png"></a>
+            <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="images/b_icon_facebook.png"></a>
+            <a href="https://plus.google.com/u/0/b/104744056212264166492/"><img src="images/b_icon_googleplus.png"></a>
+        </p>
+
+
+        <div class="clear"></div>
+
+        <div id="stage">
+            <img src="images/slider1.jpg" alt=""/>
+        </div>
+</section>
+
 <section id="roadmap" class="content">
     <div class="center">
-      <h2 class="title"><span>Roadmap</span></h2>
-      <div class="columns">
-        <div class="one_third">
-          <div class="title_header">
-            <h4 class="align-center">Status.</h4>
-          </div>
-          <p>
-            Noch ist die C3S eine Initiative ohne juristische Form. Wie wiederholt in allen Interviews und unserer Kommunikation betont, wird sich die C3S als Organisation gründen, die anschließend erst den Antrag auf Zulassung als Verwertungsgesellschaft beim DPMA (Deutsches Patent- und Markenamt) einreichen und zugelassen werden muss.
-          </p>
-          <p>
-            <strong>Die C3S kann, darf und wird keine Rechte für Urheber wahrnehmen, bevor das DPMA ihr die notwendige Erlaubnis erteilt hat, als Verwertungsgesellschaft zu agieren. Momentan ist die C3S noch keine Verwertungsgesellschaft und kann keine Verträge verhandeln oder abschließen.</strong>
-          </p>
-        </div >
+        <h2 class="title"><span>Roadmap</span></h2>
 
-        <div class="one_third">
-          <div class="title_header">
-            <h4 class="align-center">Aussicht.</h4>
-          </div>
-          <p>
-            Wir hoffen, dass wir die Gründung der C3S als Organisation (als juristische Person) im Spätherbst 2012 bekannt geben können. Der Antrag auf Zulassung als deutsche Verwertungsgesellschaft sollte gegen Anfang 2013 beim DPMA eingereicht werden. 
-          </p>
-          <p>
-            Wichtiger aber ist der Umstand, dass wir die Unterstützung aller Urheber benötigen, die bereit sind, der C3S nach ihrer Zulassung beizutreten. Eure Absichtserklärung ist notwendig, um die Nachfrage nach einer solchen Verwertungsgesellschaft zu belegen.
-          </p>
+        <div class="columns">
+            <div class="one_third">
+                <div class="title_header">
+                    <h4 class="align-center">Status.</h4>
+                </div>
+                <p>
+                    Noch ist die C3S eine Initiative ohne juristische Form. Wie wiederholt in allen Interviews und
+                    unserer Kommunikation betont, wird sich die C3S als Organisation gründen, die anschließend erst den
+                    Antrag auf Zulassung als Verwertungsgesellschaft beim DPMA (Deutsches Patent- und Markenamt)
+                    einreichen und zugelassen werden muss.
+                </p>
 
-        </div >
+                <p>
+                    <strong>Die C3S kann, darf und wird keine Rechte für Urheber wahrnehmen, bevor das DPMA ihr die
+                        notwendige Erlaubnis erteilt hat, als Verwertungsgesellschaft zu agieren. Momentan ist die C3S
+                        noch keine Verwertungsgesellschaft und kann keine Verträge verhandeln oder abschließen.</strong>
+                </p>
+            </div>
 
-        <div class="one_third last">
-          <div class="title_header">
-            <h4 class="align-center">Seid dabei.</h4>
-          </div>
-          <p>
-            Ihr und Eure Werke seid der Kern und bildet den wertvollsten Teil des Geschäftsmodells, das die C3S beim DPMA einreichen wird, um die Stabilität und Umsetzbarkeit der Verwertungsgesellschaft zu belegen. Ihr <strong><em>seid</em></strong> die Verwertungsgesellschaft. Aber eben keine traditionelle.
-          </p>  
-          <p>
-            Deshalb werden wir schon in Kürze beginnen, Euch um Eure Unterstützung zu bitten. Darum, dass Ihr Eure Absicht bestätigt, der C3S beizutreten, wenn es soweit ist.
-          </p>
-          <p>
-            Tragt euch <strong>jetzt</strong> in den <a href="#howitworks">Newsletter</a> ein, damit wir Euch erreichen, wenn der Countdown beginnt!
-          </p>
-          <p>
-            <strong>Es ist Euer Projekt. Ihr könnt bestimmen, wie Eure Werke verwertet und Eure Rechte wahrgenommen werden sollen. Seid dabei.</strong>
-          </p>
-        </div >
-        <!-- END one row --> 
-      </div>
-      <div class="clear"></div>
+            <div class="one_third">
+                <div class="title_header">
+                    <h4 class="align-center">Aussicht.</h4>
+                </div>
+                <p>
+                    Wir hoffen, dass wir die Gründung der C3S als Organisation (als juristische Person) im Spätherbst
+                    2012 bekannt geben können. Der Antrag auf Zulassung als deutsche Verwertungsgesellschaft sollte
+                    gegen Anfang 2013 beim DPMA eingereicht werden.
+                </p>
+
+                <p>
+                    Wichtiger aber ist der Umstand, dass wir die Unterstützung aller Urheber benötigen, die bereit sind,
+                    der C3S nach ihrer Zulassung beizutreten. Eure Absichtserklärung ist notwendig, um die Nachfrage
+                    nach einer solchen Verwertungsgesellschaft zu belegen.
+                </p>
+
+            </div>
+
+            <div class="one_third last">
+                <div class="title_header">
+                    <h4 class="align-center">Seid dabei.</h4>
+                </div>
+                <p>
+                    Ihr und Eure Werke seid der Kern und bildet den wertvollsten Teil des Geschäftsmodells, das die C3S
+                    beim DPMA einreichen wird, um die Stabilität und Umsetzbarkeit der Verwertungsgesellschaft zu
+                    belegen. Ihr <strong><em>seid</em></strong> die Verwertungsgesellschaft. Aber eben keine
+                    traditionelle.
+                </p>
+
+                <p>
+                    Deshalb werden wir schon in Kürze beginnen, Euch um Eure Unterstützung zu bitten. Darum, dass Ihr
+                    Eure Absicht bestätigt, der C3S beizutreten, wenn es soweit ist.
+                </p>
+
+                <p>
+                    Tragt euch <strong>jetzt</strong> in den <a href="#howitworks">Newsletter</a> ein, damit wir Euch
+                    erreichen, wenn der Countdown beginnt!
+                </p>
+
+                <p>
+                    <strong>Es ist Euer Projekt. Ihr könnt bestimmen, wie Eure Werke verwertet und Eure Rechte
+                        wahrgenommen werden sollen. Seid dabei.</strong>
+                </p>
+            </div>
+            <!-- END one row -->
+        </div>
+        <div class="clear"></div>
 
     </div>
-    <!-- /END .center--> 
-  </section>
-  <!-- /END #blog-->
-    
-    
-    
-    
-    
+    <!-- /END .center-->
+</section>
+<!-- /END #blog-->
 
-    <section id="howitworks" class="content">
-      
-      <div class="center">
-        
+
+<section id="howitworks" class="content">
+
+    <div class="center">
+
         <h2 class="title"><span>Wie es funktioniert</span></h2>
 
         <div class="columns">
-        
-          <div class="one_fourth">
-            <div class="title_header">
-              <h4 class="align-center">Die Idee.<br>&nbsp;</h4>
+
+            <div class="one_fourth">
+                <div class="title_header">
+                    <h4 class="align-center">Die Idee.<br>&nbsp;</h4>
+                </div>
+                <p>Die C3S wird einen neuen, internationalen und vorwiegend am Online-Segment orientierten Markt öffnen.
+                    Sie richtet sich an Musiker, die traditionellen Verwertungsgesellschaften nicht beitreten möchten
+                    oder können, ohne ihren bevorzugten Weg der Lizenzierung aufzugeben und dennoch Umsätze mit ihren
+                    Werken erzielen möchten. Auf längere Sicht beabsichtigt die C3S, Niederlassungen in allen
+                    europäischen Ländern anzubieten, um ein einheitliches Lizenzierungsmodell regional übergreifend
+                    anbieten zu können.</p>
+
+                <p>Die kostenlose Weitergabe von Werken zu nicht-kommerziellen Zwecken wird von der C3S unterstützt
+                    werden, kann jedoch eingeschränkt sein durch die Intention des Urhebers und die von ihm gewählte
+                    Lizenz.</p>
+
+                <p>Die Mitgliedschaft in der C3S wird nur Urhebern möglich sein. Das vermeidet eine Verzerrung der
+                    Diskussionen der Mitgliederschaft durch die Interessen von Rechtsnachfolgern oder Verlegern. Die C3S
+                    wird jedoch offen sein für alle Urheber: Für professionelle Komponisten, semi-professionelle Musiker
+                    ebenso wie für so genannte Prosumer. Ziel der Öffnung zum Prosumer ist die Heranführung und
+                    Förderung des kreativen Umgangs mit Musik.</p>
+
+                <p>Darüber hinaus wird die C3S kulturelle Projekte und schulische sowie weiterbildende Angebote
+                    insbesondere zu Copyright- bzw. Urheberrechtsthemen fördern und unterstützen.</p>
             </div>
-            <p>Die C3S wird einen neuen, internationalen und vorwiegend am Online-Segment orientierten Markt öffnen. Sie richtet sich an Musiker, die traditionellen Verwertungsgesellschaften nicht beitreten möchten oder können, ohne ihren bevorzugten Weg der Lizenzierung aufzugeben und dennoch Umsätze mit ihren Werken erzielen möchten. Auf längere Sicht beabsichtigt die C3S, Niederlassungen in allen europäischen Ländern anzubieten, um ein einheitliches Lizenzierungsmodell regional übergreifend anbieten zu können.</p>
-            <p>Die kostenlose Weitergabe von Werken zu nicht-kommerziellen Zwecken wird von der C3S unterstützt werden, kann jedoch eingeschränkt sein durch die Intention des Urhebers und die von ihm gewählte Lizenz.</p>
-            <p>Die Mitgliedschaft in der C3S wird nur Urhebern möglich sein. Das vermeidet eine Verzerrung der Diskussionen der Mitgliederschaft durch die Interessen von Rechtsnachfolgern oder Verlegern. Die C3S wird jedoch offen sein für alle Urheber: Für professionelle Komponisten, semi-professionelle Musiker ebenso wie für so genannte Prosumer. Ziel der Öffnung zum Prosumer ist die Heranführung und Förderung des kreativen Umgangs mit Musik.</p>
-            <p>Darüber hinaus wird die C3S kulturelle Projekte und schulische sowie weiterbildende Angebote insbesondere zu Copyright- bzw. Urheberrechtsthemen fördern und unterstützen.</p>
-          </div>
-          
-          <div class="one_fourth">
-            <div class="title_header">
-              <h4 class="align-center">Unsere Ziele: <br>Das ist für Euch drin.</h4>
+
+            <div class="one_fourth">
+                <div class="title_header">
+                    <h4 class="align-center">Unsere Ziele: <br>Das ist für Euch drin.</h4>
+                </div>
+                <ul>
+                    <li><strong>Bessere Einnahmemöglichkeiten</strong> für Musikern, die alternative Lizenzmodelle
+                        nutzen.
+                    </li>
+                    <li><strong>Keine Vorabzahlung:</strong> Geringe Mitgliedsbeiträge, die von erwirtschafteten
+                        Lizenzgebühren abgezogen werden – kein Negativkonto.
+                    </li>
+                    <li><strong>Gesichertes Mindesteinkommen:</strong> Du erhältst 100% der monatlichen Lizenzgebühren,
+                        so lange ein fester Schwellenwert nicht überschritten wird.
+                    </li>
+                    <li><strong>Werkbasierte Verwertung:</strong> Du wirst entscheiden können, welche Werke die C3S
+                        verwalten soll.
+                    </li>
+                    <li><strong>Pay-per-play:</strong> Die Verteilung der Lizenzgebühren soll basierend auf einem
+                        1:1-Schlüssel erfolgen, so weit es die technologische Umsetzung zulässt.
+                    </li>
+                    <li><strong>Du behältst die vollständige Kontrolle über Deine Rechte,</strong> die C3S ist das
+                        ausführende Organ.
+                    </li>
+                    <li><strong>Du entscheidest über die kostenlose und legale Verwendung</strong> Deiner Musik.</li>
+                    <li><strong>Einfache Lizenzierung</strong> Deiner Werke für <strong>Games, Film und
+                        Werbung.</strong></li>
+                    <li><strong>Volle und gleiche Stimmrechte</strong> für alle Mitglieder.</li>
+                    <li><strong>Transparenz</strong> für alle Zahlungstransaktionen und Lizenzierungsvorgänge.</li>
+                    <li><strong>Geringer Verwaltungsaufwand für unabhängige Künstler</strong> durch weitgehend
+                        automatisierte Lizenzverträge.
+                    </li>
+                </ul>
             </div>
-            <ul>
-              <li><strong>Bessere Einnahmemöglichkeiten</strong> für Musikern, die alternative Lizenzmodelle nutzen.</li>
-              <li><strong>Keine Vorabzahlung:</strong> Geringe Mitgliedsbeiträge, die von erwirtschafteten Lizenzgebühren abgezogen werden – kein Negativkonto.</li>
-              <li><strong>Gesichertes Mindesteinkommen:</strong> Du erhältst 100% der monatlichen Lizenzgebühren, so lange ein fester Schwellenwert nicht überschritten wird.</li>
-              <li><strong>Werkbasierte Verwertung:</strong> Du wirst entscheiden können, welche Werke die C3S verwalten soll.</li>
-              <li><strong>Pay-per-play:</strong> Die Verteilung der Lizenzgebühren soll basierend auf einem 1:1-Schlüssel erfolgen, so weit es die technologische Umsetzung zulässt.</li>
-              <li><strong>Du behältst die vollständige Kontrolle über Deine Rechte,</strong> die C3S ist das ausführende Organ.</li>
-              <li><strong>Du entscheidest über die kostenlose und legale Verwendung</strong> Deiner Musik.</li>
-              <li><strong>Einfache Lizenzierung</strong> Deiner Werke für <strong>Games, Film und Werbung.</strong></li>
-              <li><strong>Volle und gleiche Stimmrechte</strong> für alle Mitglieder.</li>
-              <li><strong>Transparenz</strong> für alle Zahlungstransaktionen und Lizenzierungsvorgänge.</li>
-              <li><strong>Geringer Verwaltungsaufwand für unabhängige Künstler</strong> durch weitgehend automatisierte Lizenzverträge.</li>
-            </ul>
-          </div>
-              
-          <div class="one_fourth">
-            <div class="title_header">
-              <h4 class="align-center">Auch für<br>andere interessant.</h4>
+
+            <div class="one_fourth">
+                <div class="title_header">
+                    <h4 class="align-center">Auch für<br>andere interessant.</h4>
+                </div>
+                <p>Vorteile für Content Provider, Lizenznehmer und private Nutzer:</p>
+                <ul>
+                    <li><strong>Vereinfachung:</strong> Europaweite Lizenzierung und klare Tarifstrukturen.</li>
+                    <li><strong>One-Stop-Lösung zur Lizenzierung:</strong> Vermittlung von Lizenzen zur Zweitverwertung
+                        zwischen Content Providern und Lizenznehmern.
+                    </li>
+                    <li><strong>Einsatz aktueller Technologie:</strong> Automatisierte Playlisten-Übermittlung,
+                        intelligente Indexierung und Suche, automatisiertes Monitoring von TV/Radio/Online-Kanälen,
+                        Online-Lizenzierung, Micro Payment
+                    </li>
+                    <li><strong>Etablierung neuer Märkte</strong> für (Net)Labels und Distributoren.</li>
+                    <li><strong>Rechtssicherheit</strong> im Einsatz von Creative-Commons- und freien Lizenzen bei
+                        Unternehmen.
+                    </li>
+                    <li><strong>Klare und akzeptable Tarife</strong> mit vorhersehbaren Lizenzkosten für Veranstalter.
+                    </li>
+                    <li><strong>Kostenlose Downloads, frei zum privaten und legalen Tausch</strong> für Musik-Fans.</li>
+                    <li>Unterstützung von <strong>Projekten im Bildungsbereich,</strong> um <strong>Bewusstsein und
+                        Verständnis im Umgang mit Urheberrecht, Creative Commons und freien Lizenzen</strong> zu
+                        vermitteln.
+                    </li>
+                </ul>
             </div>
-            <p>Vorteile für Content Provider, Lizenznehmer und private Nutzer:</p>
-            <ul>
-              <li><strong>Vereinfachung:</strong> Europaweite Lizenzierung und klare Tarifstrukturen.</li>
-              <li><strong>One-Stop-Lösung zur Lizenzierung:</strong> Vermittlung von Lizenzen zur Zweitverwertung zwischen Content Providern und Lizenznehmern.</li>
-              <li><strong>Einsatz aktueller Technologie:</strong> Automatisierte Playlisten-Übermittlung, intelligente Indexierung und Suche, automatisiertes Monitoring von TV/Radio/Online-Kanälen, Online-Lizenzierung, Micro Payment</li>
-              <li><strong>Etablierung neuer Märkte</strong> für (Net)Labels und Distributoren.</li>
-              <li><strong>Rechtssicherheit</strong> im Einsatz von Creative-Commons- und freien Lizenzen bei Unternehmen.</li>
-              <li><strong>Klare und akzeptable Tarife</strong> mit vorhersehbaren Lizenzkosten für Veranstalter.</li>
-              <li><strong>Kostenlose Downloads, frei zum privaten und legalen Tausch</strong> für Musik-Fans.</li>
-              <li>Unterstützung von <strong>Projekten im Bildungsbereich,</strong> um <strong>Bewusstsein und Verständnis im Umgang mit Urheberrecht, Creative Commons und freien Lizenzen</strong> zu vermitteln.</li>
-            </ul>
-          </div>
-          
-          <div class="one_fourth last">
-            <div class="title_header">
-              <h4 class="align-center">OMFG!!! <br>Ich bin dabei!</h4>
+
+            <div class="one_fourth last">
+                <div class="title_header">
+                    <h4 class="align-center">OMFG!!! <br>Ich bin dabei!</h4>
+                </div>
+                <p>Ja – meine Stimme habt Ihr. Ich möchte über die C3S auf dem Laufenden gehalten werden.</p>
+
+
+                <div id="templateBody" class="bodyContent rounded6">
+                    <div class="indicates-required"><span class="asterisk">*</span> erforderlich</div>
+                    <form action="http://openmusiccontest.us5.list-manage2.com/subscribe/post" method="POST">
+                        <input type="hidden" name="u" value="fb2b7ee86d5387c5ff789d44f">
+                        <input type="hidden" name="id" value="ffb04c507c">
+
+                        <div id="mergeTable" class="mergeTable">
+                            <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
+                                <label for="MERGE0"><strong>Email Adresse</strong> <span
+                                        class="asterisk">*</span></label>
+
+                                <div class="field-group">
+                                    <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0"
+                                           size="25" value="">
+                                </div>
+                            </div>
+                            <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-1">
+                                <label for="MERGE1">Vorname</label>
+
+                                <div class="field-group">
+                                    <input type="text" name="MERGE1" id="MERGE1" size="25" value="">
+                                </div>
+                            </div>
+                            <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-2">
+                                <label for="MERGE2">Nachname</label>
+
+                                <div class="field-group">
+                                    <input type="text" name="MERGE2" id="MERGE2" size="25" value="">
+                                </div>
+                            </div>
+                            <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-3">
+                                <label for="MERGE3">(Künstlername, Name von Band, Label oder Unternehmen)</label>
+
+                                <div class="field-group">
+                                    <input type="text" name="MERGE3" id="MERGE3" size="25" value="">
+                                </div>
+                            </div>
+                            <div class="mergeRow dojoDndItem mergeRow-url" id="mergeRow-4">
+                                <label for="MERGE4">Link zu Deiner/Eurer Website</label>
+
+                                <div class="field-group">
+                                    <input type="url" autocapitalize="off" autocorrect="off" name="MERGE4" id="MERGE4"
+                                           size="25" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mergeRow">
+                            <label>Bevorzugtes Format</label>
+
+                            <div class="field-group groups">
+                                <ul class="interestgroup_field">
+                                    <li><input type="radio" name="EMAILTYPE" id="EMAILTYPE_HTML" value="html"
+                                               checked><label for="EMAILTYPE_HTML">HTML</label></li>
+                                    <li><input type="radio" name="EMAILTYPE" id="EMAILTYPE_TEXT" value="text"><label
+                                            for="EMAILTYPE_TEXT">Text</label></li>
+                                    <li><input type="radio" name="EMAILTYPE" id="EMAILTYPE_MOBILE" value="mobile"><label
+                                            for="EMAILTYPE_MOBILE">Mobil</label></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="submit_container">
+                            <input type="submit" class="button" name="submit" value="Subscribe to list">
+                        </div>
+                    </form>
+
+                    <br>
+
+
+                </div>
             </div>
-            <p>Ja – meine Stimme habt Ihr. Ich möchte über die C3S auf dem Laufenden gehalten werden.</p>
-            
-
-<div id="templateBody" class="bodyContent rounded6">
-  <div class="indicates-required"><span class="asterisk">*</span>  erforderlich</div>
-    <form action="http://openmusiccontest.us5.list-manage2.com/subscribe/post" method="POST">
-    <input type="hidden" name="u" value="fb2b7ee86d5387c5ff789d44f">
-    <input type="hidden" name="id" value="ffb04c507c">
-    <div id="mergeTable" class="mergeTable">
-      <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
-        <label for="MERGE0"><strong>Email Adresse</strong> <span class="asterisk">*</span></label>
-        <div class="field-group">
-          <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-        </div>
-      </div>
-    <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-1">
-      <label for="MERGE1">Vorname</label>
-        <div class="field-group">
-          <input type="text" name="MERGE1" id="MERGE1" size="25" value="">
-        </div>
-      </div>
-    <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-2">
-    <label for="MERGE2">Nachname</label>
-    <div class="field-group">
-      <input type="text" name="MERGE2" id="MERGE2" size="25" value="">
-    </div>
-    </div>
-    <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-3">
-      <label for="MERGE3">(Künstlername, Name von Band, Label oder Unternehmen)</label>
-      <div class="field-group">
-        <input type="text" name="MERGE3" id="MERGE3" size="25" value="">
-      </div>              
-    </div>
-    <div class="mergeRow dojoDndItem mergeRow-url" id="mergeRow-4">
-      <label for="MERGE4">Link zu Deiner/Eurer Website</label>
-      <div class="field-group">
-        <input type="url" autocapitalize="off" autocorrect="off" name="MERGE4" id="MERGE4" size="25" value="">
-      </div>
-    </div>
-  </div>
-  <div class="mergeRow">
-    <label>Bevorzugtes Format</label>
-    <div class="field-group groups">
-      <ul class="interestgroup_field">
-        <li><input type=  "radio" name="EMAILTYPE" id="EMAILTYPE_HTML" value="html" checked><label for="EMAILTYPE_HTML">HTML</label></li>
-        <li><input type="radio" name="EMAILTYPE" id="EMAILTYPE_TEXT" value="text" ><label for="EMAILTYPE_TEXT">Text</label></li>
-        <li><input type="radio" name="EMAILTYPE" id="EMAILTYPE_MOBILE" value="mobile" ><label for="EMAILTYPE_MOBILE">Mobil</label></li>
-      </ul>
-    </div>
-  </div>
-
-  <br>
-
-  <div class="submit_container">
-    <input type="submit" class="button" name="submit" value="Subscribe to list">
-  </div>
-  </form>
-  
-  <br>
-
-
-
-  </div>
-  </div>
 
             <div class="align-center">
-              <br>  
-              <span class="poweredBy"><a href="http://www.mailchimp.com/monkey-rewards/?aid=fb2b7ee86d5387c5ff789d44f&afl=1"><img src="http://gallery.mailchimp.com/089443193dd93823f3fed78b4/images/MC_MonkeyReward_15.1.png" width="70px" border="0" alt="Email Marketing Powered by MailChimp" title="MailChimp Email Marketing"></a></span>
+                <br>
+                <span class="poweredBy"><a
+                        href="http://www.mailchimp.com/monkey-rewards/?aid=fb2b7ee86d5387c5ff789d44f&afl=1"><img
+                        src="http://gallery.mailchimp.com/089443193dd93823f3fed78b4/images/MC_MonkeyReward_15.1.png"
+                        width="70px" border="0" alt="Email Marketing Powered by MailChimp"
+                        title="MailChimp Email Marketing"></a></span>
             </div>
             <!-- END mailchimp logo-->
 
-            
 
-          </div>
-          </div>
         </div>
-        <div class="clear"></div>
-        
-   <div class="center">
+    </div>
+</div>
+<div class="clear"></div>
 
-        <div class="columns">
+<div class="center">
+
+    <div class="columns">
         <!-- START second row HOW-IT-WORKS-->
 
-            <div class="four_fourth last">
-    
-                <p class="align-center">Unterstütze die C3S mit Deiner Spende - egal, wie klein der Betrag, er zahlt sich aus. Geldbündel weisen wir natürlich keineswegs zurück... </p>
+        <div class="four_fourth last">
 
-                <div class="align-center">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="C3P6TJLQXCAJ4">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-                    </br>
-                </div>
-        
-                <p class="align-center">So lange die C3S noch nicht gegründet ist, gehen alle Spenden an den gemeinnützigen Verein <a href="#contact">OpenMusicContest.org e.V.</a>. Der Aufbau der C3S ist derzeit das einzige Projekt des OpenMusicContest.org e.V.; Spenden werden genutzt, um organisatorische Kosten der C3S zu decken.</p>
+            <p class="align-center">Unterstütze die C3S mit Deiner Spende - egal, wie klein der Betrag, er zahlt sich
+                aus. Geldbündel weisen wir natürlich keineswegs zurück... </p>
+
+            <div class="align-center">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="C3P6TJLQXCAJ4">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/DE/i/btn/btn_donateCC_LG.gif"
+                           border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1"
+                         height="1">
+                </form>
+                </br>
             </div>
-            <!-- END column donation row-->
-            
-        </div>
-        <!-- END columns-->
 
+            <p class="align-center">So lange die C3S noch nicht gegründet ist, gehen alle Spenden an den gemeinnützigen
+                Verein <a href="#contact">OpenMusicContest.org e.V.</a>. Der Aufbau der C3S ist derzeit das einzige
+                Projekt des OpenMusicContest.org e.V.; Spenden werden genutzt, um organisatorische Kosten der C3S zu
+                decken.</p>
+        </div>
+        <!-- END column donation row-->
 
     </div>
-    <!-- /END .center-->         
-
-    <div class="clear"></div>
-  </section>
-  <!-- /END #home-->
+    <!-- END columns-->
 
 
+</div>
+<!-- /END .center-->
+
+<div class="clear"></div>
+</section>
+<!-- /END #home-->
 
 
-
-
-
-    <section id="about" class="recent-blog content">
+<section id="about" class="recent-blog content">
     <div class="center">
-      <h2 class="title"><span>Über uns</span></h2>
-      <div class="columns">
-        <div class="one_half">
-          <p>
-            Die C3S soll als europäische, nicht gewinnorientierte (non-profit) Verwertungsgesellschaft gegründet werden. Verwaltet werden musikalische Werke, die unter Creative-Commons-NC-Lizenzen oder freien Lizenzen veröffentlicht wurden, d.h. Werke, die unter keiner expliziten Lizenz stehen und allein dem Urheberrecht unterliegen.
-          </p>  
+        <h2 class="title"><span>Über uns</span></h2>
+
+        <div class="columns">
+            <div class="one_half">
+                <p>
+                    Die C3S soll als europäische, nicht gewinnorientierte (non-profit) Verwertungsgesellschaft gegründet
+                    werden. Verwaltet werden musikalische Werke, die unter Creative-Commons-NC-Lizenzen oder freien
+                    Lizenzen veröffentlicht wurden, d.h. Werke, die unter keiner expliziten Lizenz stehen und allein dem
+                    Urheberrecht unterliegen.
+                </p>
+            </div>
+
+            <div class="one_half last">
+                <p>
+                    Die C3S wird gemeinschaftlich von allen Mitgliedern auf Basis ihres vollen und gleichen Stimmrechts
+                    geformt. Jedem Mitglied steht es frei, der C3S nur ausgewählte Werke zur Verwertung und Verwaltung
+                    zur Verfügung zu stellen – die C3S beabsichtigt keine exklusive, personenbezogene Lizenzierung.
+
+                </p>
+            </div>
+
+            <div class="clear"></div>
+            <!-- END one row -->
+
+            <div class="one_half">
+                <p>
+                    Kurzfristiges Ziel ist die Verwaltung von Online- und Live-Lizenzen, in einem zweiten Schritt sind
+                    Lizenzrechte für den B2B-Bereich und die mechanische Vervielfältigung vorgesehen. Vermutlich erst
+                    langfristig kann die Lizenzierung im Rundfunk berücksichtigt werden.
+                </p>
+            </div>
+
+            <div class="one_half last">
+                <p>
+                    Das Monitoring, Reporting (Playlisten-Übermittlung), ebenso wie Lizenzierungs- und
+                    Abrechnungsabläufe werden durch den Einsatz aktueller technologischer Lösungen automatisiert,
+                    vereinfacht und gestrafft – OpenSource bevorzugt.
+                </p>
+
+                <div class="clear"></div>
+                <!-- END one row -->
+
+
+            </div>
+            <div class="clear"></div>
         </div>
+        <!-- /END .center-->
 
-        <div class="one_half last">
-          <p>
-            Die C3S wird gemeinschaftlich von allen Mitgliedern auf Basis ihres vollen und gleichen Stimmrechts geformt. Jedem Mitglied steht es frei, der C3S nur ausgewählte Werke zur Verwertung und Verwaltung zur Verfügung zu stellen – die C3S beabsichtigt keine exklusive, personenbezogene Lizenzierung.
 
-          </p>  
+        <div class="center">
+
+            <div class="columns">
+                <!-- START second row HOW-IT-WORKS-->
+
+                <div class="two_half last">
+                    <p class="align-center">
+                        <strong>Die C3S - Cultural Commons Collecting Society - ist eine unabhängige Initiative. Die C3S
+                            ist weder ein Teil von, noch ein Projekt von, oder verbunden mit Creative Commons. Ebenso
+                            wie andere Verbände und Unternehmen, hat die C3S die Organisation der Creative Commons
+                            jedoch um Rat gebeten, um das C3S-Konzept der Integration der Creative-Commons-Lizenzen mit
+                            den Richtlinien der Creative Commons abzustimmen.</strong>
+                    </p>
+                </div>
+                <!-- END column donation row-->
+
+            </div>
+            <!-- END columns-->
+
+
+            <div class="clear"></div>
+
+
         </div>
+        <!-- /END .center-->
 
-        <div class="clear"></div>
-        <!-- END one row --> 
+</section>
+<!-- /END #blog-->
 
-        <div class="one_half">
-          <p>
-            Kurzfristiges Ziel ist die Verwaltung von Online- und Live-Lizenzen, in einem zweiten Schritt sind Lizenzrechte für den B2B-Bereich und die mechanische Vervielfältigung vorgesehen. Vermutlich erst langfristig kann die Lizenzierung im Rundfunk berücksichtigt werden.
-          </p>  
-        </div>
 
-        <div class="one_half last">
-          <p>
-            Das Monitoring, Reporting (Playlisten-Übermittlung), ebenso wie Lizenzierungs- und Abrechnungsabläufe werden durch den Einsatz aktueller technologischer Lösungen automatisiert, vereinfacht und gestrafft – OpenSource bevorzugt.
-          </p>
-        <div class="clear"></div>
-        <!-- END one row --> 
-          
-          
+<section id="team" class="about-us content">
+    <div class="center">
+        <h2 class="title"><span>Das Team</span></h2>
+
+        <div class="columns">
+
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>Danny Bruder</h2>
+
+                        <div class="position">(Musiker, Musikproduzent & Free Culture Activist)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>Fabian Fabian</h2>
+
+                        <div class="position">(UX, Visuals & Code // superpursuitmo.de)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third last">
+                <div>
+                    <div class="name-position">
+                        <h2>Marcel Hennes</h2>
+
+                        <div class="position">(OpenMusicContest.org e.V.)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>Susanne Laurentius</h2>
+
+                        <div class="position">(Presse & Finanzierung)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>Zoe Leela</h2>
+
+                        <div class="position">(Künstlerin & Netzaktivistin)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third last">
+                <div>
+                    <div class="name-position">
+                        <h2>Simona Levi</h2>
+
+                        <div class="position">(Künstlerin & Aktivistin // Conservas)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>m.eik michalke</h2>
+
+                        <div class="position">(Künstler // OpenMusicContest.org e.V.)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>Christoph Scheid</h2>
+
+                        <div class="position">(OpenMusicContest.org e.V.)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third last">
+                <div>
+                    <div class="name-position">
+                        <h2>Holger Schwetter</h2>
+
+                        <div class="position">(Musikwissenschaftler & Produzent // Universität Bochum)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>Wolfgang Senges</h2>
+
+                        <div class="position">(Berater Musikwirtschaft // ContentSphere)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third">
+                <div>
+                    <div class="name-position">
+                        <h2>Michael Weller</h2>
+
+                        <div class="position">(Rechtsanwalt // EEAR - Europäische EDV-Akademie des Rechts)</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="one_third last">
+                <div>
+                    <div class="name-position">
+                        <h2>... und vor allem IHR!</h2>
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+
         </div>
         <div class="clear"></div>
     </div>
     <!-- /END .center-->
-    
-    
-        <div class="center">
+</section>
+<!-- /END #about-us -->
+
+
+<section id="contact" class="content">
+    <div class="center">
+        <h2 class="title"><span>Sprecht uns an</span></h2>
 
         <div class="columns">
-        <!-- START second row HOW-IT-WORKS-->
+            <div class="one_third">
 
-            <div class="two_half last"> 
-                <p class="align-center">
-                    <strong>Die C3S - Cultural Commons Collecting Society - ist eine unabhängige Initiative. Die C3S ist weder ein Teil von, noch ein Projekt von, oder verbunden mit Creative Commons. Ebenso wie andere Verbände und Unternehmen, hat die C3S die Organisation der Creative Commons jedoch um Rat gebeten, um das C3S-Konzept der Integration der Creative-Commons-Lizenzen mit den Richtlinien der Creative Commons abzustimmen.</strong>
-                </p>  
+
+                <!-- <h3>Our Location</h3>
+           <img src="images/map.jpg" alt="Map" >
+           <p>Lapasan, Cagayan de Oro City, Philippines<br>
+             <br>
+             Tel: 012345678910<br>
+             Fax: 012345678910<br>
+             Email: <a href="mailto:info@domainname.com">info@domainname.com</a></p> -->
+                <h3>Folgt uns</h3>
+
+                <p class="social">
+                    <a href="https://twitter.com/C3S"><img src="images/b_icon_twitter.png"></a>
+                    <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="images/b_icon_facebook.png"></a>
+                    <a href="https://plus.google.com/u/0/b/104744056212264166492/"><img
+                            src="images/b_icon_googleplus.png"></a>
+                </p>
+
+
             </div>
-            <!-- END column donation row-->
-            
+            <div class="two_third last">
+                <h3>Kontakt</h3>
+                <h4>Schreibt an: <a
+                        href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#99;&#45;&#51;&#45;&#115;&#46;&#101;&#117;">
+                    &#105;&#110;&#102;&#111;&#64;&#99;&#45;&#51;&#45;&#115;&#46;&#101;&#117;</a></h4>
+
+                <p>
+                    Die C3S ist ein Projekt von:<br>
+                    OpenMusicContest.org e.V.<br>
+                    &#99;&#47;&#111;&#160;&#77;&#105;&#99;&#104;&#97;&#108;&#107;&#101;<br>
+                    &#65;&#109;&#160;&#83;&#116;&#114;&#97;&#117;&#115;&#115;&#101;&#110;&#107;&#114;&#101;&#117;&#122;&#160;&#49;&#49;<br>
+                    &#52;&#48;&#50;&#50;&#57;&#160;&#68;&#252;&#115;&#115;&#101;&#108;&#100;&#111;&#114;&#102;<br>
+                    Vertretungsberechtigt:<br>
+                    Meik Michalke (Vorsitzender)<br>
+                    Christoph Scheid (stellv. Vorsitzender)<br>
+                    Marcel Hennes (stellv. Vorsitzender)<br>
+                    Sebastian Schmachtel (Schatzmeister, stellv. Vorsitzender)<br>
+                    siehe <a href="http://www.openmusiccontest.org/impressum">Impressum des OMC</a> für mehr
+                    Informationen.
+                    <br>
+
+                </p>
+            </div>
+            <div class="clear"></div>
         </div>
-        <!-- END columns-->
-
-
-      <div class="clear"></div>
-
-
     </div>
-    <!-- /END .center-->         
-
-  </section>
-  <!-- /END #blog-->
-
-
-
-  <section id="team" class="about-us content">
+    <!-- /END .center-->
+</section>
+<section id="copyright" class="footer content">
     <div class="center">
-      <h2 class="title"><span>Das Team</span></h2>
-      <div class="columns">
-        
-
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-               <h2>Danny Bruder</h2>
-               <div class="position">(Musiker, Musikproduzent & Free Culture Activist)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-              <h2>Fabian Fabian</h2>
-              <div class="position">(UX, Visuals & Code // superpursuitmo.de)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third last">
-          <div>
-            <div class="name-position">
-              <h2>Marcel Hennes</h2>
-              <div class="position">(OpenMusicContest.org e.V.)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
+        <p>Design by <a href="http://themeforest.net/user/joefrey/?ref=joefrey" target="_blank">Joefrey</a> a curator of
+            <a href="http://webappsledger.com/" target="_blank">Web Apps Ledger</a></p>
 
         <div class="clear"></div>
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-              <h2>Susanne Laurentius</h2>
-              <div class="position">(Presse & Finanzierung)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-              <h2>Zoe Leela</h2>
-              <div class="position">(Künstlerin & Netzaktivistin)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third last">
-          <div>
-            <div class="name-position">
-              <h2>Simona Levi</h2>
-              <div class="position">(Künstlerin & Aktivistin // Conservas)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-        
-        <div class="clear"></div>
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-              <h2>m.eik michalke</h2>
-              <div class="position">(Künstler // OpenMusicContest.org e.V.)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-              <h2>Christoph Scheid</h2>
-              <div class="position">(OpenMusicContest.org e.V.)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third last">
-          <div>
-            <div class="name-position">
-              <h2>Holger Schwetter</h2>
-              <div class="position">(Musikwissenschaftler & Produzent // Universität Bochum)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-        
-        <div class="clear"></div>
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-              <h2>Wolfgang Senges</h2>
-              <div class="position">(Berater Musikwirtschaft // ContentSphere)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third">
-          <div>
-            <div class="name-position">
-               <h2>Michael Weller</h2>
-               <div class="position">(Rechtsanwalt // EEAR - Europäische EDV-Akademie des Rechts)</div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-        <div class="one_third last">
-          <div>
-            <div class="name-position">
-              <h2>... und vor allem IHR!</h2>
-              
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-
-
-
-      </div>
-      <div class="clear"></div>
     </div>
-    <!-- /END .center--> 
-  </section>
-  <!-- /END #about-us -->
-  
+</section>
 
-
-
-  
-  <section id="contact" class="content">
-    <div class="center">
-      <h2 class="title"><span>Sprecht uns an</span></h2>
-      <div class="columns">
-      <div class="one_third">
-
-
-
-        <!-- <h3>Our Location</h3>
-        <img src="images/map.jpg" alt="Map" >
-        <p>Lapasan, Cagayan de Oro City, Philippines<br>
-          <br>
-          Tel: 012345678910<br>
-          Fax: 012345678910<br>
-          Email: <a href="mailto:info@domainname.com">info@domainname.com</a></p> -->
-        <h3>Folgt uns</h3>
-        
-        <p class="social">
-        <a href="https://twitter.com/C3S"><img src="images/b_icon_twitter.png"></a>
-        <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="images/b_icon_facebook.png"></a>
-        <a href="https://plus.google.com/u/0/b/104744056212264166492/"><img src="images/b_icon_googleplus.png"></a>
-      </p>
-
-
-      </div>
-      <div class="two_third last">
-        <h3>Kontakt</h3>
-        <h4>Schreibt an: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#99;&#45;&#51;&#45;&#115;&#46;&#101;&#117;">&#105;&#110;&#102;&#111;&#64;&#99;&#45;&#51;&#45;&#115;&#46;&#101;&#117;</a></h4>
-        <p>
-          Die C3S ist ein Projekt von:<br>
-          OpenMusicContest.org e.V.<br>
-          &#99;&#47;&#111;&#160;&#77;&#105;&#99;&#104;&#97;&#108;&#107;&#101;<br>
-          &#65;&#109;&#160;&#83;&#116;&#114;&#97;&#117;&#115;&#115;&#101;&#110;&#107;&#114;&#101;&#117;&#122;&#160;&#49;&#49;<br>
-          &#52;&#48;&#50;&#50;&#57;&#160;&#68;&#252;&#115;&#115;&#101;&#108;&#100;&#111;&#114;&#102;<br>
-          Vertretungsberechtigt:<br>
-          Meik Michalke (Vorsitzender)<br>
-          Christoph Scheid (stellv. Vorsitzender)<br>
-          Marcel Hennes (stellv. Vorsitzender)<br>
-          Sebastian Schmachtel (Schatzmeister, stellv. Vorsitzender)<br>
-          siehe <a href="http://www.openmusiccontest.org/impressum">Impressum des OMC</a> für mehr Informationen.
-          <br>
-
-        </p>
-      </div>
-      <div class="clear"></div>
-      </div>
+<div class="modal hide fade" id="decOfIntent">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Absichtserklärung zum</br>geplanten Beitritt in die</h3><img src="images/logo_horiz_w700.png">
     </div>
-    <!-- /END .center--> 
-  </section>
-  <section id="copyright" class="footer content">
-    <div class="center">
-      <p>Design by <a href="http://themeforest.net/user/joefrey/?ref=joefrey" target="_blank">Joefrey</a> a curator of <a href="http://webappsledger.com/" target="_blank">Web Apps Ledger</a></p>
-      <div class="clear"></div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <legend>Bitte beantwortet <b>alle</b> Fragen:</legend>
+
+
+            <div class="control-group">
+                <label><b>(1)</b> Ja, ich bin musikalisch kreativ tätig als (Mehrfachauswahl möglich):</label>
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox"> Komponist_in
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"> Texter_in
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"> Musiker_in
+                    </label>
+                </div>
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox"> Musikproduzen_in
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"> Remixer_in
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"> DJ_ane
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label><b>(2)</b> Ich bin an mindestens drei Titeln kreativ beteiligt gewesen in einer der unter (1) genannten Funktione</label>
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox"> Ja
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"> Nein
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label><b>(3)</b> Ich bin Mitglied einer Verwertungsgesellschaft.</label>
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox"> Ja
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"> Nein
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-group contactinfos">
+                <label id="mycontacts"><b>(4)</b> Meine Kontaktinformationen</label>
+                <label class="control-label" for="">Nachname</label>
+                <div class="controls">
+                    <input type="text" class="span2" placeholder="Nachname">
+                </div>
+            </div>
+            <div class="control-group contactinfos">
+                <label class="control-label" for="">Vorname</label>
+                <div class="controls">
+                    <input type="text" class="span2" placeholder="Vorname">
+                </div>
+            </div>
+            <div class="control-group contactinfos">
+                <label class="control-label" for="">E-Mail</label>
+                <div class="controls">
+                    <input type="text" class="span3" placeholder="example@domain.tld">
+                </div>
+            </div>
+            <div class="control-group contactinfos">
+                <label class="control-label" for="">Strasse, Hausnummer</label>
+                <div class="controls controls-row">
+                    <input type="text" class="span2" placeholder="">
+                    <input type="text" class="span1" placeholder="">
+                </div>
+            </div>
+            <div class="control-group contactinfos">
+                <label class="control-label" for="">Adresszusatz</label>
+                <div class="controls">
+                    <input type="text" class="span3" placeholder="">
+                </div>
+            </div>
+            <div class="control-group contactinfos">
+                <label class="control-label" for="">PLZ, Stadt</label>
+                <div class="controls controls-row">
+                    <input type="text" class="span1" placeholder="PLZ">
+                    <input type="text" class="span2" placeholder="Stadt">
+                </div>
+            </div>
+            <div class="control-group contactinfos">
+                <label class="control-label" for="">Land</label>
+                <div class="controls">
+                    <input type="text" class="span2" placeholder="Land">
+                </div>
+            </div>
+
+            <p id="pid">Die Absichtserklärung verpflichtet mich nicht, der C3S zu irgendeinem Zeitpunkt beizutreten und kann
+            jederzeit widerrufen werden.</p>
+            <p class="align-center">* * *</p>
+
+            <div class="control-group contactinfos">
+                <label><input type="checkbox"> Ja, ich habe den Text beider Seiten der Absichtserklärung vollständig gelesen und verstanden.</label>
+            </div>
+            <div class="control-group contactinfos">
+                <label><input type="checkbox"> Ja, ich ziehe den Eintritt in die C3S als Verwertungsgesellschaft ernsthaft in Betracht und möchte bei
+                Gründung der C3S per Email kontaktiert werden.</label>
+            </div>
+            <div class="control-group contactinfos">
+                <label><input type="checkbox"> Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen, bin damit einverstanden, und weiß, dass ich
+                dieses Einverständnis jederzeit widerrufen kann.</label>
+            </div>
+
+        </form>
+
     </div>
-  </section>
+    <div class="modal-footer">
+        <a href="#" class="btn">Cancel</a>
+        <a href="#" class="btn btn-primary">generate PDF</a>
+    </div>
 </div>
+
 <script src="js/custom.js" type="text/javascript"></script>
 <script type="text/javascript">
 
-$(document).ready(function(){
-$("#ajax-contact-form").submit(function(){
+    $(document).ready(function () {
+        $("#ajax-contact-form").submit(function () {
 
-var str = $(this).serialize();
+            var str = $(this).serialize();
 
-   $.ajax({
-   type: "POST",
-   url: "contact.php",
-   data: str,
-   success: function(msg){
-    
-$("#note").ajaxComplete(function(event, request, settings){
+            $.ajax({
+                type:"POST",
+                url:"contact.php",
+                data:str,
+                success:function (msg) {
 
-if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
-{
-result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
-$("#fields").hide();
-}
-else
-{
-result = '<ul class="error">'+msg+'</ul>';
-}
+                    $("#note").ajaxComplete(function (event, request, settings) {
 
-$(this).html(result);
+                        if (msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+                        {
+                            result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+                            $("#fields").hide();
+                        }
+                        else {
+                            result = '<ul class="error">' + msg + '</ul>';
+                        }
 
-});
+                        $(this).html(result);
 
-}
+                    });
 
- });
+                }
 
-return false;
+            });
 
-});
+            return false;
 
-});
-</script> 
+        });
+
+    });
+</script>
 
 <!--/border-->
 <div id="left-border"></div>
@@ -703,99 +974,97 @@ return false;
 </html>
 
 
+<!--
+
+how it works #howitworks
+about
+team
+contact
+
+[blog]
+[story]
 
 
 
-
-<!-- 
-  
-  how it works #howitworks
-  about
-  team
-  contact
-  
-  [blog]
-  [story]
-
-
-
-  -->
-
-
+-->
 
 
 <script type="text/javascript">
-    $(document).ready(function(){ 
+    $(document).ready(function () {
         try {
-    $('#archive-list li:even').addClass("odd");
-        $('.field-group, .field-group input, .field-group select').bind('click',function(event){          
-      if (event.type == 'click') {
-        if ($(this).hasClass('field-group')){
-            var fg = $(this);
-            if($(this).children('.datefield').length == 1){
-                // Do not select 1st input so date picker will work.
-            } else {
-                $(this).find('input, select').slice(0,1).focus();
-              }
-        } else {
-            var fg = $(this).parents('.field-group');
-            $(this).focus();
+            $('#archive-list li:even').addClass("odd");
+            $('.field-group, .field-group input, .field-group select').bind('click', function (event) {
+                if (event.type == 'click') {
+                    if ($(this).hasClass('field-group')) {
+                        var fg = $(this);
+                        if ($(this).children('.datefield').length == 1) {
+                            // Do not select 1st input so date picker will work.
+                        } else {
+                            $(this).find('input, select').slice(0, 1).focus();
+                        }
+                    } else {
+                        var fg = $(this).parents('.field-group');
+                        $(this).focus();
+                    }
+                    fg.not('.focused-field').addClass('focused-field').children('.field-help').slideDown('fast');
+                    $('.focused-field').not(fg).removeClass('focused-field').children('.field-help').slideUp('fast');
+                }
+                event.stopPropagation();
+            });
+            $('label').bind('click', function (event) {
+                if (event.type == 'click') {
+                    var fg = $(this).next();
+
+                    if (fg.children('.datefield').length == 1) {
+                        // Do not select 1st input so date picker will work.
+                    } else {
+                        fg.find('input, select').slice(0, 1).focus();
+                    }
+                    fg.not('.focused-field').addClass('focused-field').children('.field-help').slideDown('fast');
+                    $('.focused-field').not(fg).removeClass('focused-field').children('.field-help').slideUp('fast');
+                }
+                event.stopPropagation();
+            });
+            // Allow select inputs to be width:auto up to 500px (because max-width doesn't work in IE7)
+            $("select").each(function () {
+                $(this).css("width", "auto");
+                if ($(this).width() > 500) {
+                    $(this).css("width", "500px");
+                }
+            });
+
+        } catch (e) {
+            console.log(e);
         }
-              fg.not('.focused-field').addClass('focused-field').children('.field-help').slideDown('fast');
-              $('.focused-field').not(fg).removeClass('focused-field').children('.field-help').slideUp('fast');
-      }
-        event.stopPropagation();
-        });
-        $('label').bind('click',function(event){
-      if (event.type == 'click') {
-                var fg = $(this).next();
-
-          if(fg.children('.datefield').length == 1){
-              // Do not select 1st input so date picker will work.
-          } else {
-              fg.find('input, select').slice(0,1).focus();
-            }
-              fg.not('.focused-field').addClass('focused-field').children('.field-help').slideDown('fast');
-              $('.focused-field').not(fg).removeClass('focused-field').children('.field-help').slideUp('fast');
-      }
-        event.stopPropagation();
-        });
-        // Allow select inputs to be width:auto up to 500px (because max-width doesn't work in IE7)
-        $("select").each(function(){
-            $(this).css("width", "auto");
-            if($(this).width() > 500){
-                $(this).css("width", "500px");
-            }
-        });
-
-        } catch(e){ console.log(e); }
-    });   
+    });
 </script>
 
-        <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.mailcheck.min.js"></script>
+<script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.mailcheck.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
         try {
-        var domains =['hotmail.co.uk','yahoo.co.uk','yahoo.com.tw','yahoo.com.au','yahoo.com.mx','gmail.com','hotmail.com','yahoo.com','aol.com','comcast.net','msn.com','seznam.cz','sbcglobal.net','live.com','bellsouth.net','hotmail.fr','verizon.net','mail.ru','btinternet.com','cox.net','yahoo.com.br','bigpond.com','att.net','yahoo.fr','mac.com','ymail.com','googlemail.com','earthlink.net','xtra.co.nz','me.com','yahoo.gr','walla.com','yahoo.es','charter.net','shaw.ca','live.nl','yahoo.ca','orange.fr','optonline.net','gmx.de','wanadoo.fr','optusnet.com.au','rogers.com','web.de','ntlworld.com','juno.com','yahoo.com.sg','rocketmail.com','yandex.ru','yahoo.co.in','centrum.cz','live.co.uk','sympatico.ca','libero.it','walla.co.il','bigpond.net.au','yahoo.com.hk','ig.com.br','live.com.au','free.fr','sky.com','uol.com.br','abv.bg','live.fr','terra.com.br','hotmail.it','tiscali.co.uk','rediffmail.com','aim.com','blueyonder.co.uk','telus.net','bol.com.br','hotmail.es','email.cz','windowslive.com','talktalk.net','home.nl','t-online.de','yahoo.de','telenet.be','163.com','embarqmail.com','windstream.net','roadrunner.com','bluewin.ch','skynet.be','laposte.net','yahoo.it','qq.com','live.dk','planet.nl','hetnet.nl','gmx.net','mindspring.com','rambler.ru','iinet.net.au','eircom.net','yahoo.com.ar','wp.pl','mail.com'];
-        $('#MERGE0').on('blur', function() {
-          $(this).mailcheck({
-            domains: domains,
-            suggested: function(element, suggestion) {
-                var msg = 'Hmm, did you mean '+suggestion.full+'?';
-                if ( $('#MERGE0_mailcheck').length > 0 ){
-                    $('#MERGE0_mailcheck').html(msg);
-                } else {
-                    element.after('<div id="MERGE0_mailcheck" class="errorText">'+msg+'</div>');
-                }
-            },
-            empty: function(element) {
-                if ( $('#MERGE0_mailcheck').length > 0 ){
-                    $('#MERGE0_mailcheck').remove();
-                }
-              return;
-            }
-          });
-        });
-        } catch(e){ console.log(e); }
+            var domains = ['hotmail.co.uk', 'yahoo.co.uk', 'yahoo.com.tw', 'yahoo.com.au', 'yahoo.com.mx', 'gmail.com', 'hotmail.com', 'yahoo.com', 'aol.com', 'comcast.net', 'msn.com', 'seznam.cz', 'sbcglobal.net', 'live.com', 'bellsouth.net', 'hotmail.fr', 'verizon.net', 'mail.ru', 'btinternet.com', 'cox.net', 'yahoo.com.br', 'bigpond.com', 'att.net', 'yahoo.fr', 'mac.com', 'ymail.com', 'googlemail.com', 'earthlink.net', 'xtra.co.nz', 'me.com', 'yahoo.gr', 'walla.com', 'yahoo.es', 'charter.net', 'shaw.ca', 'live.nl', 'yahoo.ca', 'orange.fr', 'optonline.net', 'gmx.de', 'wanadoo.fr', 'optusnet.com.au', 'rogers.com', 'web.de', 'ntlworld.com', 'juno.com', 'yahoo.com.sg', 'rocketmail.com', 'yandex.ru', 'yahoo.co.in', 'centrum.cz', 'live.co.uk', 'sympatico.ca', 'libero.it', 'walla.co.il', 'bigpond.net.au', 'yahoo.com.hk', 'ig.com.br', 'live.com.au', 'free.fr', 'sky.com', 'uol.com.br', 'abv.bg', 'live.fr', 'terra.com.br', 'hotmail.it', 'tiscali.co.uk', 'rediffmail.com', 'aim.com', 'blueyonder.co.uk', 'telus.net', 'bol.com.br', 'hotmail.es', 'email.cz', 'windowslive.com', 'talktalk.net', 'home.nl', 't-online.de', 'yahoo.de', 'telenet.be', '163.com', 'embarqmail.com', 'windstream.net', 'roadrunner.com', 'bluewin.ch', 'skynet.be', 'laposte.net', 'yahoo.it', 'qq.com', 'live.dk', 'planet.nl', 'hetnet.nl', 'gmx.net', 'mindspring.com', 'rambler.ru', 'iinet.net.au', 'eircom.net', 'yahoo.com.ar', 'wp.pl', 'mail.com'];
+            $('#MERGE0').on('blur', function () {
+                $(this).mailcheck({
+                    domains:domains,
+                    suggested:function (element, suggestion) {
+                        var msg = 'Hmm, did you mean ' + suggestion.full + '?';
+                        if ($('#MERGE0_mailcheck').length > 0) {
+                            $('#MERGE0_mailcheck').html(msg);
+                        } else {
+                            element.after('<div id="MERGE0_mailcheck" class="errorText">' + msg + '</div>');
+                        }
+                    },
+                    empty:function (element) {
+                        if ($('#MERGE0_mailcheck').length > 0) {
+                            $('#MERGE0_mailcheck').remove();
+                        }
+                        return;
+                    }
+                });
+            });
+        } catch (e) {
+            console.log(e);
+        }
     });
 </script>  
