@@ -248,7 +248,7 @@ function setLightbox(){
 	}
 }
 
-// set the the fade in and out of images
+// set the the fade in and out of img
 function imageHoverFade(){
 	
 	$('#list li a img').animate({'opacity' : 1}).hover(function() {

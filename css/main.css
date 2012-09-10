@@ -1,3 +1,9 @@
+#noscript{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .modal{
     width: 670px;
     margin: -310px 0 0 -335px;
@@ -26,38 +32,47 @@
     margin-bottom: 30px;
 }
 .modal>.modal-body>form> .control-group{
-    margin-top: 30px;
+    margin-top: 5px;
 }
 #mycontacts{
     margin-bottom: 12px;
 }
 .control-group>label{
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .controls>label{
     margin: 3px 0 3px 0;
 }
-.modal>.modal-body>form>.contactinfos{
+.modal>.modal-body>form>.contactinfos,.modal>.modal-body>form>.attentions{
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.modal-body>form>.contactinfos .controls{
+.modal-body>form>.contactinfos .controls,.modal-body>form>.attentions .controls{
     display: block;
     margin-left: 180px;
 }
 
-.modal-body>form>.contactinfos>label{
+.modal-body>form>.contactinfos>label,.modal-body>form>.attentions>label{
     margin-bottom: 5px;
 }
+.attentions input{
+    margin-top: -3px;
+}
+
 
 legend{
     line-height: 26px;
     font-size: 16px;
     color: #A60000;
     font-family: "PodkovaRegular",Times,serif;
+    margin-bottom: 16px;
 }
 
 #pid{
     margin-top: 22px;
+}
+
+.error{
+    font-weight: bold;
 }

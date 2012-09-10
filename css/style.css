@@ -87,7 +87,7 @@ section #intro{ font-family:"PodkovaRegular", Times, serif; color:#161616; font-
 #recent-project{margin-bottom:2.5em;}
 .title_header img{ float:left; margin-right:10px;}
 .footer{ text-align:center;}
-#header{position:fixed; top:0px; padding:30px 0 28px 0;  background: #fff url(../images/header_bg.gif) repeat-x bottom left; width:100%; text-align:center; z-index:77; margin-bottom:4.em; }
+#header{position:fixed; top:0px; padding:30px 0 28px 0;  background: #fff url(../img/header_bg.gif) repeat-x bottom left; width:100%; text-align:center; z-index:77; margin-bottom:4.em; }
 
 /*--------------------------
 HEADINGS
@@ -99,7 +99,7 @@ h1{font-size:3.4em;}
 h2{ font-size:2.6em; }
 h3{ font-size:2em;}
 h4{ font-size:1.6em;}
-.title{ background:url(../images/stripe_bg.gif) repeat-x center left; font-size:1.1em; text-align:center; width:100%;  color:#5f5f5f; margin-bottom:2em}
+.title{ background:url(../img/stripe_bg.gif) repeat-x center left; font-size:1.1em; text-align:center; width:100%;  color:#5f5f5f; margin-bottom:2em}
 .title span{ background:#fff; padding:0 20px; font-family:"PodkovaRegular", Times, serif; text-transform:uppercase;}
 
 /*--------------------------
@@ -168,12 +168,12 @@ SOCIAL ICONS
 .bottom_social_icon, .bottom_social_icon li{list-style:none; padding:0; margin:0; float:left}
 .bottom_social_icon{float:left; width:100%}
 .bottom_social_icon li a{display:block; text-indent:-99999999px; margin:0 7px 20px 0; width:32px; height:32px}
-.bottom_social_icon li.twitter a{background:url(../images/b_icon_twitter.png) no-repeat center}
-.bottom_social_icon li.facebook a{background:url(../images/b_icon_facebook.png) no-repeat center}
-.bottom_social_icon li.dribbble a{background:url(../images/b_icon_dribbble.png) no-repeat center}
-.bottom_social_icon li.delicious a{background:url(../images/b_icon_delicious.png) no-repeat center}
-.bottom_social_icon li.skype a{background:url(../images/b_icon_skype.png) no-repeat center}
-.bottom_social_icon li.gplus a{background:url(../images/b_icon_googleplus.png) no-repeat center}
+.bottom_social_icon li.twitter a{background:url(../img/b_icon_twitter.png) no-repeat center}
+.bottom_social_icon li.facebook a{background:url(../img/b_icon_facebook.png) no-repeat center}
+.bottom_social_icon li.dribbble a{background:url(../img/b_icon_dribbble.png) no-repeat center}
+.bottom_social_icon li.delicious a{background:url(../img/b_icon_delicious.png) no-repeat center}
+.bottom_social_icon li.skype a{background:url(../img/b_icon_skype.png) no-repeat center}
+.bottom_social_icon li.gplus a{background:url(../img/b_icon_googleplus.png) no-repeat center}
 
 /*--------------------------
 QUICKSAND
@@ -191,7 +191,7 @@ DROPDWN MENU for IPHONE & IPAD
 .mobile-ipad-menu{ display:none;}
 #filter { display:none;}
 #filter { margin-top:20px; text-align:center; padding:0; position: relative; z-index: 1000;	float:right; }
-#filter #top { background: url(../images/filter.png) no-repeat; width: 200px; height: 38px; cursor:pointer; }
+#filter #top { background: url(../img/filter.png) no-repeat; width: 200px; height: 38px; cursor:pointer; }
 #filter a,#filter a:hover { display: block; text-decoration: none; padding: 10px 40px 0 15px; color: #353232; }
 #filter ul { display: none;	position: absolute;	top: 38px; left: 5px; width: 188px;	margin: 0; padding: 0; background: #e4e4e4; border: 1px solid #9e9e9e; text-align:left;	}
 #filter ul li, #filter #top{ list-style:none;}
@@ -231,7 +231,7 @@ GLOBAL
 .image_shadow { -moz-box-shadow:0px 0px 5px #000; -webkit-box-shadow:0px 0px 5px #000; box-shadow:0px 0px 5px #000; }
 .highlight{	background:#cecece;	color:#747069;}
 .check_style{ padding:0; margin:0 0 20px 0; }
-.check_style li{ background:url(../images/check.png) no-repeat left .4em; padding-left:20px; list-style:none; }
+.check_style li{ background:url(../img/check.png) no-repeat left .4em; padding-left:20px; list-style:none; }
 
 /*--------------------------
 MEDIA QUERIES
@@ -239,7 +239,7 @@ MEDIA QUERIES
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 767px)  {
 html{ overflow-y:scroll; font-size:100%; font-family:Arial,Helvetica,sans-serif; line-height:1.5; background:#fff; color:#353232; }
 body{ min-height:100%; background:#fff; float:left; width:100%; font-size:.8125em; color:#353232;}
-#header{position:fixed; top:0px; padding:0px 0; background: #fff url(../images/header_bg.gif) repeat-x bottom left; width:100%; text-align:center; z-index:77; margin-bottom:0em; }
+#header{position:fixed; top:0px; padding:0px 0; background: #fff url(../img/header_bg.gif) repeat-x bottom left; width:100%; text-align:center; z-index:77; margin-bottom:0em; }
 #top-border,#bottom-border,#left-border,#right-border{ display: none;}
 #filter { display:block;}
 .splitter{  margin-bottom:1.5em;}

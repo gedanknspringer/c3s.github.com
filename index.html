@@ -76,7 +76,7 @@
 <header id="header">
     <div class="center">
 
-        <a href="/index_en.html" style="opacity:0.5;"><img src="images/en.png"></a>
+        <a href="/index_en.html" style="opacity:0.5;"><img src="img/en.png"></a>
 
         <nav id="main-menu">
             <ul>
@@ -128,9 +128,17 @@
     <br><br>
 
     <div class="center">
+
+        <noscript>
+            <div class="alert alert-danger" id="noscript">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Attention!</strong> Please make sure that JavsScript is activated and your brower version is up to date!
+            </div>
+        </noscript>
+
         <hgroup id="mainhead">
             <div class="align-center"><a href="http://c-3-s.eu" title="C3S - Cultural Commons Collecting Society"><img
-                    src="images/logo_horiz_w700.png"></a></div>
+                    src="img/logo_horiz_w700.png"></a></div>
             <h2 class="align-center" id="head-tagline">C3S. Caring for free culture.</h2>
         </hgroup>
 
@@ -173,17 +181,17 @@
         <br>
 
         <p class="social align-center">
-            <a href="https://twitter.com/C3S"><img src="images/b_icon_twitter.png"></a>
-            <a href="http://c3s.tumblr.com"><img src="images/b_icon_tumblr.png"></a>
-            <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="images/b_icon_facebook.png"></a>
-            <a href="https://plus.google.com/u/0/b/104744056212264166492/"><img src="images/b_icon_googleplus.png"></a>
+            <a href="https://twitter.com/C3S"><img src="img/b_icon_twitter.png"></a>
+            <a href="http://c3s.tumblr.com"><img src="img/b_icon_tumblr.png"></a>
+            <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="img/b_icon_facebook.png"></a>
+            <a href="https://plus.google.com/u/0/b/104744056212264166492/"><img src="img/b_icon_googleplus.png"></a>
         </p>
 
 
         <div class="clear"></div>
 
         <div id="stage">
-            <img src="images/slider1.jpg" alt=""/>
+            <img src="img/slider1.jpg" alt=""/>
         </div>
 </section>
 
@@ -740,7 +748,7 @@
 
 
                 <!-- <h3>Our Location</h3>
-           <img src="images/map.jpg" alt="Map" >
+           <img src="img/map.jpg" alt="Map" >
            <p>Lapasan, Cagayan de Oro City, Philippines<br>
              <br>
              Tel: 012345678910<br>
@@ -749,10 +757,10 @@
                 <h3>Folgt uns</h3>
 
                 <p class="social">
-                    <a href="https://twitter.com/C3S"><img src="images/b_icon_twitter.png"></a>
-                    <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="images/b_icon_facebook.png"></a>
+                    <a href="https://twitter.com/C3S"><img src="img/b_icon_twitter.png"></a>
+                    <a href="https://www.facebook.com/pages/C3S/275522539151825"><img src="img/b_icon_facebook.png"></a>
                     <a href="https://plus.google.com/u/0/b/104744056212264166492/"><img
-                            src="images/b_icon_googleplus.png"></a>
+                            src="img/b_icon_googleplus.png"></a>
                 </p>
 
 
@@ -797,106 +805,117 @@
 <div class="modal hide fade" id="decOfIntent">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3>Absichtserklärung zum</br>geplanten Beitritt in die</h3><img src="images/logo_horiz_w700.png">
+        <h3>Absichtserklärung zum</br>geplanten Beitritt in die</h3><img src="img/logo_horiz_w700.png">
     </div>
-    <div class="modal-body">
+    <div class="modal-body" id="modalbody">
+        <div class="alert alert-error hide">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Some Infos are missing!</strong> Please make sure that the form is filled completely!
+        </div>
+        <div class="alert alert-success hide">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Thanks for your support!</strong> Now the pdf version will be open up!
+        </div>
         <form class="form-horizontal">
-            <legend>Bitte beantwortet <b>alle</b> Fragen:</legend>
+            <legend>Bitte beantworte <b>alle</b> Fragen:</legend>
 
 
-            <div class="control-group">
-                <label><b>(1)</b> Ja, ich bin musikalisch kreativ tätig als (Mehrfachauswahl möglich):</label>
+            <label><b>(1)</b> Ja, ich bin musikalisch kreativ tätig als (Mehrfachauswahl möglich):</label>
+            <div class="control-group" id="activity">
+                <span class="help-block hide">Please choose at least one of them!</span>
                 <div class="controls">
-                    <label class="checkbox">
-                        <input type="checkbox"> Komponist_in
+                    <label class="checkbox" for="composer">
+                        <input type="checkbox" name="composer" id="composer" value="composer"> Komponist_in
                     </label>
-                    <label class="checkbox">
-                        <input type="checkbox"> Texter_in
+                    <label class="checkbox" for="writer">
+                        <input type="checkbox" name="writer" id="writer" value="writer"> Texter_in
                     </label>
-                    <label class="checkbox">
-                        <input type="checkbox"> Musiker_in
+                    <label class="checkbox" for="musician">
+                        <input type="checkbox" name="musician" id="musician" value="musician"> Musiker_in
                     </label>
                 </div>
                 <div class="controls">
-                    <label class="checkbox">
-                        <input type="checkbox"> Musikproduzen_in
+                    <label class="checkbox" for="producer">
+                        <input type="checkbox" name="producer" id="producer" value="producer"> Musikproduzen_in
                     </label>
-                    <label class="checkbox">
-                        <input type="checkbox"> Remixer_in
+                    <label class="checkbox" for="remixer">
+                        <input type="checkbox" name="remixer" id="remixer" value="remixer"> Remixer_in
                     </label>
-                    <label class="checkbox">
-                        <input type="checkbox"> DJ_ane
-                    </label>
-                </div>
-            </div>
-
-            <div class="control-group">
-                <label><b>(2)</b> Ich bin an mindestens drei Titeln kreativ beteiligt gewesen in einer der unter (1) genannten Funktione</label>
-                <div class="controls">
-                    <label class="checkbox">
-                        <input type="checkbox"> Ja
-                    </label>
-                    <label class="checkbox">
-                        <input type="checkbox"> Nein
+                    <label class="checkbox" for="dj">
+                        <input type="checkbox" name="dj" id="dj" value="dj"> DJ_ane
                     </label>
                 </div>
             </div>
 
-            <div class="control-group">
-                <label><b>(3)</b> Ich bin Mitglied einer Verwertungsgesellschaft.</label>
+            <label><b>(2)</b> Ich bin an mindestens drei Titeln kreativ beteiligt gewesen in einer der unter (1) genannten Funktione</label>
+            <div class="control-group" id="creativity">
+                <span class="help-block hide">Please choose yes or no!</span>
                 <div class="controls">
-                    <label class="checkbox">
-                        <input type="checkbox"> Ja
+                    <label class="radio" for="act_yes">
+                        <input type="radio" name="activity" id="act_yes" value="yes"> Ja
                     </label>
-                    <label class="checkbox">
-                        <input type="checkbox"> Nein
+                    <label class="radio" for="act_no">
+                        <input type="radio" name="activity" id="act_no" value="no"> Nein
                     </label>
                 </div>
             </div>
 
+            <label><b>(3)</b> Ich bin Mitglied einer Verwertungsgesellschaft.</label>
+            <div class="control-group" id="memberof">
+                <span class="help-block hide">Please choose yes or no!</span>
+                <div class="controls">
+                    <label class="radio" for="member_yes">
+                        <input type="radio" name="ismember" id="member_yes" value="yes"> Ja
+                    </label>
+                    <label class="radio" for="member_no">
+                        <input type="radio" name="ismember" id="member_no" value="no"> Nein
+                    </label>
+                </div>
+            </div>
+
+            <label id="mycontacts"><b>(4)</b> Meine Kontaktinformationen</label>
             <div class="control-group contactinfos">
-                <label id="mycontacts"><b>(4)</b> Meine Kontaktinformationen</label>
-                <label class="control-label" for="">Nachname</label>
+                <label class="control-label" for="lastname">Nachname</label>
                 <div class="controls">
-                    <input type="text" class="span2" placeholder="Nachname">
-                </div>
-            </div>
-            <div class="control-group contactinfos">
-                <label class="control-label" for="">Vorname</label>
-                <div class="controls">
-                    <input type="text" class="span2" placeholder="Vorname">
+                    <input type="text" class="span2" name="lastname" id="lastname" placeholder="Nachname">
                 </div>
             </div>
             <div class="control-group contactinfos">
-                <label class="control-label" for="">E-Mail</label>
+                <label class="control-label" for="firstname">Vorname</label>
                 <div class="controls">
-                    <input type="text" class="span3" placeholder="example@domain.tld">
+                    <input type="text" class="span2" placeholder="Vorname" name="firstname" id="firstname">
+                </div>
+            </div>
+            <div class="control-group contactinfos">
+                <label class="control-label" for="mail">E-Mail</label>
+                <div class="controls">
+                    <input type="text" class="span3" placeholder="example@domain.tld" name="mail" id="mail">
                 </div>
             </div>
             <div class="control-group contactinfos">
                 <label class="control-label" for="">Strasse, Hausnummer</label>
                 <div class="controls controls-row">
-                    <input type="text" class="span2" placeholder="">
-                    <input type="text" class="span1" placeholder="">
+                    <input type="text" class="span2" placeholder="" name="street" id="street">
+                    <input type="text" class="span1" placeholder="" name="hnumber" id="hnumber">
                 </div>
             </div>
             <div class="control-group contactinfos">
-                <label class="control-label" for="">Adresszusatz</label>
+                <label class="control-label" for="address2">Adresszusatz</label>
                 <div class="controls">
-                    <input type="text" class="span3" placeholder="">
+                    <input type="text" class="span3" placeholder="" name="address2" id="address2">
                 </div>
             </div>
             <div class="control-group contactinfos">
                 <label class="control-label" for="">PLZ, Stadt</label>
                 <div class="controls controls-row">
-                    <input type="text" class="span1" placeholder="PLZ">
-                    <input type="text" class="span2" placeholder="Stadt">
+                    <input type="text" class="span1" placeholder="PLZ" name="postcode" id="postcode">
+                    <input type="text" class="span2" placeholder="Stadt" name="city" id="city">
                 </div>
             </div>
             <div class="control-group contactinfos">
-                <label class="control-label" for="">Land</label>
+                <label class="control-label" for="country">Land</label>
                 <div class="controls">
-                    <input type="text" class="span2" placeholder="Land">
+                    <input type="text" class="span2" placeholder="Land" name="country" id="country">
                 </div>
             </div>
 
@@ -904,24 +923,27 @@
             jederzeit widerrufen werden.</p>
             <p class="align-center">* * *</p>
 
-            <div class="control-group contactinfos">
-                <label><input type="checkbox"> Ja, ich habe den Text beider Seiten der Absichtserklärung vollständig gelesen und verstanden.</label>
+            <div class="control-group attentions">
+                <label for="underst_loi"><input type="checkbox" name="underst_loi" id="underst_loi"> Ja, ich habe den Text beider Seiten der Absichtserklärung vollständig gelesen und verstanden.</label>
+                <span class="help-block hide">Please read the letter of intent!</span>
             </div>
-            <div class="control-group contactinfos">
-                <label><input type="checkbox"> Ja, ich ziehe den Eintritt in die C3S als Verwertungsgesellschaft ernsthaft in Betracht und möchte bei
+            <div class="control-group attentions">
+                <label for="willb_memb"><input type="checkbox" name="willb_memb" id="willb_memb"> Ja, ich ziehe den Eintritt in die C3S als Verwertungsgesellschaft ernsthaft in Betracht und möchte bei
                 Gründung der C3S per Email kontaktiert werden.</label>
+                <span class="help-block hide">You wound be a member of C3S?</span>
             </div>
-            <div class="control-group contactinfos">
-                <label><input type="checkbox"> Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen, bin damit einverstanden, und weiß, dass ich
+            <div class="control-group attentions">
+                <label for="noti_dataProt"><input type="checkbox" name="noti_dataProt" id="noti_dataProt"> Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen, bin damit einverstanden, und weiß, dass ich
                 dieses Einverständnis jederzeit widerrufen kann.</label>
+                <span class="help-block hide">Please accept the data privacy statement!</span>
             </div>
 
         </form>
 
     </div>
     <div class="modal-footer">
-        <a href="#" class="btn">Cancel</a>
-        <a href="#" class="btn btn-primary">generate PDF</a>
+        <a href="#" data-dismiss="modal" class="btn">Cancel</a>
+        <a class="btn btn-primary" id="decOfIntentsubmit">generate PDF</a>
     </div>
 </div>
 
